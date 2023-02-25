@@ -1,7 +1,6 @@
 html {
   animation: rainbow_background 5s linear infinite;
   background-image: url('images/dancing_potato.gif');
-  background-position: 50% 50%;
   cursor: url('images/cursor.svg') 0 0, default !important;
   height: 100%;
   margin: 0;
@@ -11,7 +10,8 @@ html {
 }
 
 body::before {
-  background-image: url('images/dancing_potato.gif');
+  background-image: url('images/dancing_potato.gif'), url('images/dancing_potato.gif'), url('images/dancing_potato.gif');
+  background-position: 0 0, 300px 249px, 81px 174px;
   bottom: 0;
   content: "";
   left: 0;
