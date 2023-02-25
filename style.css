@@ -1,0 +1,105 @@
+html {
+  animation: rainbow_background 5s linear infinite;
+  background-image: url('images/dancing_potato.gif');
+  background-position: 50% 50%;
+  cursor: url('images/cursor.svg') 0 0, default !important;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 100%;
+}
+
+body::before {
+  background-image: url('images/dancing_potato.gif');
+  bottom: 0;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+a {
+  animation: rainbow_border 1s linear infinite;
+  color: #000;
+}
+
+body::before::before {
+  animation: rainbow_background 1s linear infinite;
+  bottom: 0;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+body {
+  margin: auto;
+  max-width: 80em;
+  padding: 2em;
+  text-shadow: 0 0 2px #FFF, 0 0 2px #FFF, 0 0 2px #FFF, 0 0 2px #FFF;
+}
+
+h1 {
+  animation: rainbow_border 1s linear infinite;
+}
+
+.chat-gpt {
+  font-family: monospace;
+  line-height: 1.5;
+}
+
+::selection {
+  animation: rainbow_border 1s linear infinite;
+}
+
+@keyframes rainbow_border {
+  0% {
+    text-shadow: 0 0 4px #F00;
+  }
+  17% {
+    text-shadow: 0 0 4px #FF0;
+  }
+  33% {
+    text-shadow: 0 0 4px #0F0;
+  }
+  50% {
+    text-shadow: 0 0 4px #0FF;
+  }
+  67% {
+    text-shadow: 0 0 4px #00F;
+  }
+  83% {
+    text-shadow: 0 0 4px #F0F;
+  }
+  100% {
+    text-shadow: 0 0 4px #F00;
+  }
+}
+
+@keyframes rainbow_background {
+  0% {
+    background: #F002;
+  }
+  17% {
+    background: #FF02;
+  }
+  33% {
+    background: #0F02;
+  }
+  50% {
+    background: #0FF2;
+  }
+  67% {
+    background: #00F2;
+  }
+  83% {
+    background: #F0F2;
+  }
+  100% {
+    background: #F002;
+  }
+}
