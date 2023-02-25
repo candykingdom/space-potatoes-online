@@ -53,7 +53,9 @@ h1 {
 }
 
 ::selection {
-  animation: rainbow_border 1s linear infinite;
+  background-color: black;
+  color: white;
+  text-shadow: none;
 }
 
 @keyframes rainbow_border {
