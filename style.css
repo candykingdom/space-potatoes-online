@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
 html {
   animation: rainbow_background 5s linear infinite;
   background-image: url('images/dancing_potato.gif');
@@ -48,13 +50,27 @@ h1 {
 }
 
 .logo {
+  background-color: #EEE;
+  border-bottom-color: #000;
+  border-left-color: #AAA;
+  border-right-color: #666;
+  border-style: solid;
+  border-top-color: #FFF;
+  border-width: 10px;
+  color: #000;
   float: right;
+  margin-right: -2em;
   padding: 2em;
 }
 
 .chat-gpt {
-  font-family: monospace;
+  font-family: 'Indie Flower', cursive;
   line-height: 1.5;
+}
+
+.box {
+  background-color: #FFF;
+  padding: 1em;
 }
 
 ::selection {
