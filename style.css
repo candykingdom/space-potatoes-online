@@ -4,7 +4,6 @@ html {
   animation: rainbow_background 5s linear infinite;
   background-image: url('images/dancing_potato.gif');
   cursor: url('images/cursor.svg') 0 0, default !important;
-  height: 100%;
   margin: 0;
   padding: 0;
   position: relative;
@@ -21,6 +20,16 @@ body::before {
   right: 0;
   top: 0;
   z-index: -1;
+}
+
+section {
+  background-color: rgba(240, 240, 240, 0.9);
+  border-bottom: 10px solid #888;
+  border-left: 10px solid #888;
+  border-right: 10px solid #FFF;
+  border-top: 10px solid #FFF;
+  margin: 1em 0;
+  padding: 1em;
 }
 
 a {
@@ -50,27 +59,23 @@ h1 {
 }
 
 .logo {
-  background-color: #EEE;
-  border-bottom-color: #000;
-  border-left-color: #AAA;
-  border-right-color: #666;
-  border-style: solid;
-  border-top-color: #FFF;
-  border-width: 10px;
-  color: #000;
-  float: right;
-  margin-right: -2em;
-  padding: 2em;
+  float: left;
+  height: 10em;
+  margin-right: 1em;
 }
 
-.chat-gpt {
-  font-family: 'Indie Flower', cursive;
-  line-height: 1.5;
+.event-table {
+  border-collapse: collapse;
+  white-space: nowrap;
+  width: 100%;
 }
 
-.box {
-  background-color: #FFF;
-  padding: 1em;
+.event-table td {
+  border-top: 1px solid #666;
+}
+
+.event-table img {
+  width: 100%;
 }
 
 ::selection {
